@@ -1,0 +1,227 @@
+/* Container and Main Styles */
+.main_container {
+  padding-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 290px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.up, .down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+}
+
+/* Card Styles */
+.card1, .card2, .card3, .card4 {
+  width: 110px;
+  height: 110px;
+  border: none;
+  background: rgb(30, 30, 30);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.2s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Specific Card Styles with Margins */
+.card1 {
+  outline: 5px solid red;
+  border-radius: 100px 8px 8px 8px;
+}
+
+.card2 {
+  outline: 5px solid rgb(0, 166, 255);
+  border-radius: 8px 100px 8px 8px;
+}
+
+.card3 {
+  outline: 5px solid rgb(93, 250, 255);
+  border-radius: 8px 8px 8px 100px;
+}
+
+.card4 {
+  outline: 5px solid rgb(217, 0, 255);
+  border-radius: 8px 8px 100px 8px;
+}
+
+.card1 .linkedin {
+  margin-left: 15px; 
+  margin-top: 20px; 
+}
+
+.card2 .github {
+  display: block;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.card3 .envelope {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 30px; 
+}
+
+.card4 .pdf {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+/* Icon Hover Effects */
+.card1:hover .linkedin {
+  fill: red;
+}
+
+.card2:hover .github {
+  fill: rgb(43, 85, 255);
+}
+
+.card3:hover .envelope {
+  fill: rgb(139, 251, 255);
+}
+
+.card4:hover .pdf {
+  fill: rgb(225, 52, 255);
+}
+
+/* Card Hover Effects */
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.card1:hover {
+  background: rgb(161, 0, 0);
+}
+
+.card2:hover {
+  background: rgb(0, 40, 198);
+}
+
+.card3:hover {
+  background: rgb(0, 160, 166);
+}
+
+.card4:hover {
+  background: rgb(169, 0, 199);
+}
+/* Footer */
+
+.footer{
+    background-color: #1D293F;
+}
+
+.footer__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer__title, .footer__newsletter{
+    color: #fff;
+}
+
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+}
+
+.nav--footer{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.nav__link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: #2091F9;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer__copy{
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.footer__copyright{
+    font-weight: 300;
+}
+
+.footer__icons{
+    margin-bottom: 10px;
+}
+
+.footer__img{
+    width: 30px;
+}
+.copyright {
+  font-family: Arial, sans-serif; /* Cambia la fuente si es necesario */
+  font-size: 14px; /* Tamaño del texto */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espacio interno */
+  background-color: #333; /* Color de fondo */
+  margin-top: auto;
+}
+
+.copyright .icon {
+  display: inline-block;
+  vertical-align: middle; /* Alineación vertical del icono */
+  margin-left: 5px; /* Espacio a la izquierda del icono */
+}
+
+.copyright i {
+  color: white; /* Color del icono */
+  font-size: 16px; /* Tamaño del icono */
+}
+
